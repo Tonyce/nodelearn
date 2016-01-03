@@ -1,0 +1,472 @@
+Last login: Thu Dec  4 20:10:03 on console
+TangtangdeMacBook-Pro:~ d_ttang$ gdb
+-bash: gdb: command not found
+TangtangdeMacBook-Pro:~ d_ttang$ sudo port install gdb
+Password:
+Warning: port definitions are more than two weeks old, consider updating them by running 'port selfupdate'.
+--->  Cleaning gdb
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+TangtangdeMacBook-Pro:~ d_ttang$ port selfupdate
+--->  Updating MacPorts base sources using rsync
+Error: Error synchronizing MacPorts sources: command execution failed
+Please run `port -v selfupdate' for details.
+Error: /opt/local/bin/port: port selfupdate failed: Error synchronizing MacPorts sources: command execution failed
+TangtangdeMacBook-Pro:~ d_ttang$ port selfupdate
+--->  Updating MacPorts base sources using rsync
+Error: Error synchronizing MacPorts sources: command execution failed
+Please run `port -v selfupdate' for details.
+Error: /opt/local/bin/port: port selfupdate failed: Error synchronizing MacPorts sources: command execution failed
+TangtangdeMacBook-Pro:~ d_ttang$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+It appears Homebrew is already installed. If your intent is to reinstall you
+should do the following before running this installer again:
+    rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+TangtangdeMacBook-Pro:~ d_ttang$ brew
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$ brew -h
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$ rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$ sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+Password:
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/man/man1/brew.1
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Counting objects: 215420, done.
+remote: Compressing objects: 100% (56921/56921), done.
+^C-e:36:in `system': Interrupt1/215420), 33.44 MiB | 5.00 KiB/s    
+	from -e:36:in `system'
+	from -e:183:in `block in <main>'
+	from -e:172:in `chdir'
+	from -e:172:in `<main>'
+
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+It appears Homebrew is already installed. If your intent is to reinstall you
+should do the following before running this installer again:
+    rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+TangtangdeMacBook-Pro:~ d_ttang$ rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/man/man1/brew.1
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+Password:
+==> Downloading and installing Homebrew...
+remote: Counting objects: 215430, done.
+remote: Compressing objects: 100% (56929/56929), done.
+error: RPC failed; result=56, HTTP code = 2007 MiB | 1024 bytes/s   
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+Failed during: git fetch origin master:refs/remotes/origin/master -n
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+It appears Homebrew is already installed. If your intent is to reinstall you
+should do the following before running this installer again:
+    rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+TangtangdeMacBook-Pro:~ d_ttang$ rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/man/man1/brew.1
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+Password:
+==> Downloading and installing Homebrew...
+remote: Counting objects: 215430, done.
+remote: Compressing objects: 100% (56929/56929), done.
+remote: Total 215430 (delta 157291), reused 215412 (delta 157277)
+Receiving objects: 100% (215430/215430), 47.34 MiB | 43.00 KiB/s, done.
+Resolving deltas: 100% (157291/157291), done.
+From https://github.com/Homebrew/homebrew
+ * [new branch]      master     -> origin/master
+error: unable to unlink old 'Library/Aliases/0mq' (Permission denied)
+error: unable to unlink old 'Library/Aliases/4store' (Permission denied)
+error: unable to unlink old 'Library/Aliases/Secret Rabbit Code' (Permission denied)
+error: unable to create symlink Library/Aliases/actor-framework (Permission denied)
+error: unable to unlink old 'Library/Aliases/ag' (Permission denied)
+error: unable to unlink old 'Library/Aliases/alut' (Permission denied)
+error: unable to unlink old 'Library/Aliases/android' (Permission denied)
+error: unable to unlink old 'Library/Aliases/apache-activemq' (Permission denied)
+error: unable to unlink old 'Library/Aliases/apache-fop' (Permission denied)
+error: unable to unlink old 'Library/Aliases/aws-as' (Permission denied)
+error: unable to unlink old 'Library/Aliases/aws-mon' (Permission denied)
+error: unable to unlink old 'Library/Aliases/beanstalkd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/bjam' (Permission denied)
+error: unable to unlink old 'Library/Aliases/boehmgc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/boost-jam' (Permission denied)
+error: unable to create symlink Library/Aliases/boot2docker-cli (Permission denied)
+error: unable to unlink old 'Library/Aliases/bzr' (Permission denied)
+error: unable to unlink old 'Library/Aliases/cowthink' (Permission denied)
+error: unable to unlink old 'Library/Aliases/cpanm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/csvfix' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ctags-exuberant' (Permission denied)
+error: unable to unlink old 'Library/Aliases/db' (Permission denied)
+error: unable to unlink old 'Library/Aliases/dbus' (Permission denied)
+error: unable to unlink old 'Library/Aliases/dejagnu' (Permission denied)
+error: unable to unlink old 'Library/Aliases/eyeD3' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fastcgi' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fishfish' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fluidsynth' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gearmand' (Permission denied)
+error: unable to unlink old 'Library/Aliases/git-tig' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gnu-scientific-library' (Permission denied)
+error: unable to unlink old 'Library/Aliases/google-go' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gperftools' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gpg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gpg2' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gs' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gtk' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gtypist' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hashdeep' (Permission denied)
+error: unable to unlink old 'Library/Aliases/heroku' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/htop' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hudson' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ipsum' (Permission denied)
+error: unable to unlink old 'Library/Aliases/jocr' (Permission denied)
+error: unable to unlink old 'Library/Aliases/lcms' (Permission denied)
+error: unable to unlink old 'Library/Aliases/lcms2' (Permission denied)
+error: unable to unlink old 'Library/Aliases/leg' (Permission denied)
+error: unable to create symlink Library/Aliases/libcaf (Permission denied)
+error: unable to unlink old 'Library/Aliases/libcryptopp' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libgd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libgeoip' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpeg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpeg-turbo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/liblabjackusb' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libmad' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libmcrypt' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libnettle' (Permission denied)
+error: unable to unlink old 'Library/Aliases/liboggz' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libqrencode' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtag' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtasn' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtcnative' (Permission denied)
+error: unable to unlink old 'Library/Aliases/littlecms' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mediainfo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mongo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mosh' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mp4box' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mpich' (Permission denied)
+error: unable to unlink old 'Library/Aliases/myrepos' (Permission denied)
+error: unable to unlink old 'Library/Aliases/node.js' (Permission denied)
+error: unable to unlink old 'Library/Aliases/nodejs' (Permission denied)
+error: unable to unlink old 'Library/Aliases/npm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/nsis' (Permission denied)
+error: unable to unlink old 'Library/Aliases/o-caml' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ocaml' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ocio' (Permission denied)
+error: unable to unlink old 'Library/Aliases/offlineimap' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ooc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/openmpi' (Permission denied)
+error: unable to unlink old 'Library/Aliases/openocd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pgrep' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pipeviewer' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pkgconfig' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pkill' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pocketsphinx' (Permission denied)
+error: unable to unlink old 'Library/Aliases/postgres' (Permission denied)
+error: unable to create symlink Library/Aliases/pt (Permission denied)
+error: unable to unlink old 'Library/Aliases/qt4' (Permission denied)
+error: unable to unlink old 'Library/Aliases/shell-fm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/slang' (Permission denied)
+error: unable to unlink old 'Library/Aliases/sphinxbase' (Permission denied)
+error: unable to unlink old 'Library/Aliases/sqlite3' (Permission denied)
+error: unable to unlink old 'Library/Aliases/stax-sdk' (Permission denied)
+error: unable to unlink old 'Library/Aliases/style' (Permission denied)
+error: unable to unlink old 'Library/Aliases/svn' (Permission denied)
+error: unable to unlink old 'Library/Aliases/tinyfugue' (Permission denied)
+error: unable to unlink old 'Library/Aliases/twemproxy' (Permission denied)
+error: unable to unlink old 'Library/Aliases/twolame' (Permission denied)
+error: unable to unlink old 'Library/Aliases/unix2dos' (Permission denied)
+error: unable to unlink old 'Library/Aliases/urxvt' (Permission denied)
+error: unable to unlink old 'Library/Aliases/usb-multiplex-daemon' (Permission denied)
+error: unable to unlink old 'Library/Aliases/vid.stab' (Permission denied)
+error: unable to unlink old 'Library/Aliases/wxwidgets' (Permission denied)
+error: unable to unlink old 'Library/Aliases/xmlsec1' (Permission denied)
+error: unable to unlink old 'Library/Aliases/zmq' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_bash_completion.sh' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_fish_completion.fish' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_zsh_completion.zsh' (Permission denied)
+error: unable to unlink old 'Library/Contributions/example-formula.rb' (Permission denied)
+error: unable to unlink old 'Library/ENV/3.2.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/ant' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/apr-1-config' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/bsdmake' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c89' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c99' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/cc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/clang' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/clang++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/cpp' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.3' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.4' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.5' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.7' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.8' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.9' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.3' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.4' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.5' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.7' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.8' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.9' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/git' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gmake' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/i686-apple-darwin11-llvm-g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/i686-apple-darwin11-llvm-gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/ld' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-g++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-gcc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/make' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/mig' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/pod2man' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/sed' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/svn' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/xcrun' (Permission denied)
+fatal: cannot create directory at 'Library/ENV/pkgconfig/10.10': Permission denied
+Failed during: git reset --hard origin/master
+TangtangdeMacBook-Pro:~ d_ttang$ sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+Password:
+Don't run this as root!
+TangtangdeMacBook-Pro:~ d_ttang$  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+It appears Homebrew is already installed. If your intent is to reinstall you
+should do the following before running this installer again:
+    rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+TangtangdeMacBook-Pro:~ d_ttang$ brew doctor
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:~ d_ttang$ /usr/local/
+-bash: /usr/local/: is a directory
+TangtangdeMacBook-Pro:~ d_ttang$ cd /usr/local/
+TangtangdeMacBook-Pro:local d_ttang$ git fetch origin
+remote: Counting objects: 361, done.
+remote: Compressing objects: 100% (170/170), done.
+remote: Total 361 (delta 133), reused 361 (delta 133)
+Receiving objects: 100% (361/361), 133.84 KiB | 49.00 KiB/s, done.
+Resolving deltas: 100% (133/133), done.
+From https://github.com/Homebrew/homebrew
+ * [new branch]      gh-pages   -> origin/gh-pages
+ * [new branch]      go         -> origin/go
+TangtangdeMacBook-Pro:local d_ttang$ brew
+/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+/usr/local/bin/brew: line 23: /usr/local/Library/brew.rb: Undefined error: 0
+TangtangdeMacBook-Pro:local d_ttang$ git reset --hard origin/master
+error: unable to unlink old 'Library/Aliases/0mq' (Permission denied)
+error: unable to unlink old 'Library/Aliases/4store' (Permission denied)
+error: unable to unlink old 'Library/Aliases/Secret Rabbit Code' (Permission denied)
+error: unable to create symlink Library/Aliases/actor-framework (Permission denied)
+error: unable to unlink old 'Library/Aliases/ag' (Permission denied)
+error: unable to unlink old 'Library/Aliases/alut' (Permission denied)
+error: unable to unlink old 'Library/Aliases/android' (Permission denied)
+error: unable to unlink old 'Library/Aliases/apache-activemq' (Permission denied)
+error: unable to unlink old 'Library/Aliases/apache-fop' (Permission denied)
+error: unable to unlink old 'Library/Aliases/aws-as' (Permission denied)
+error: unable to unlink old 'Library/Aliases/aws-mon' (Permission denied)
+error: unable to unlink old 'Library/Aliases/beanstalkd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/bjam' (Permission denied)
+error: unable to unlink old 'Library/Aliases/boehmgc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/boost-jam' (Permission denied)
+error: unable to create symlink Library/Aliases/boot2docker-cli (Permission denied)
+error: unable to unlink old 'Library/Aliases/bzr' (Permission denied)
+error: unable to unlink old 'Library/Aliases/cowthink' (Permission denied)
+error: unable to unlink old 'Library/Aliases/cpanm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/csvfix' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ctags-exuberant' (Permission denied)
+error: unable to unlink old 'Library/Aliases/db' (Permission denied)
+error: unable to unlink old 'Library/Aliases/dbus' (Permission denied)
+error: unable to unlink old 'Library/Aliases/dejagnu' (Permission denied)
+error: unable to unlink old 'Library/Aliases/eyeD3' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fastcgi' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fishfish' (Permission denied)
+error: unable to unlink old 'Library/Aliases/fluidsynth' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gearmand' (Permission denied)
+error: unable to unlink old 'Library/Aliases/git-tig' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gnu-scientific-library' (Permission denied)
+error: unable to unlink old 'Library/Aliases/google-go' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gperftools' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gpg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gpg2' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gs' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gtk' (Permission denied)
+error: unable to unlink old 'Library/Aliases/gtypist' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hashdeep' (Permission denied)
+error: unable to unlink old 'Library/Aliases/heroku' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/htop' (Permission denied)
+error: unable to unlink old 'Library/Aliases/hudson' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ipsum' (Permission denied)
+error: unable to unlink old 'Library/Aliases/jocr' (Permission denied)
+error: unable to unlink old 'Library/Aliases/lcms' (Permission denied)
+error: unable to unlink old 'Library/Aliases/lcms2' (Permission denied)
+error: unable to unlink old 'Library/Aliases/leg' (Permission denied)
+error: unable to create symlink Library/Aliases/libcaf (Permission denied)
+error: unable to unlink old 'Library/Aliases/libcryptopp' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libgd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libgeoip' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpeg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpeg-turbo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libjpg' (Permission denied)
+error: unable to unlink old 'Library/Aliases/liblabjackusb' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libmad' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libmcrypt' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libnettle' (Permission denied)
+error: unable to unlink old 'Library/Aliases/liboggz' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libqrencode' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtag' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtasn' (Permission denied)
+error: unable to unlink old 'Library/Aliases/libtcnative' (Permission denied)
+error: unable to unlink old 'Library/Aliases/littlecms' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mediainfo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mongo' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mosh' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mp4box' (Permission denied)
+error: unable to unlink old 'Library/Aliases/mpich' (Permission denied)
+error: unable to unlink old 'Library/Aliases/myrepos' (Permission denied)
+error: unable to unlink old 'Library/Aliases/node.js' (Permission denied)
+error: unable to unlink old 'Library/Aliases/nodejs' (Permission denied)
+error: unable to unlink old 'Library/Aliases/npm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/nsis' (Permission denied)
+error: unable to unlink old 'Library/Aliases/o-caml' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ocaml' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ocio' (Permission denied)
+error: unable to unlink old 'Library/Aliases/offlineimap' (Permission denied)
+error: unable to unlink old 'Library/Aliases/ooc' (Permission denied)
+error: unable to unlink old 'Library/Aliases/openmpi' (Permission denied)
+error: unable to unlink old 'Library/Aliases/openocd' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pgrep' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pipeviewer' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pkgconfig' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pkill' (Permission denied)
+error: unable to unlink old 'Library/Aliases/pocketsphinx' (Permission denied)
+error: unable to unlink old 'Library/Aliases/postgres' (Permission denied)
+error: unable to create symlink Library/Aliases/pt (Permission denied)
+error: unable to unlink old 'Library/Aliases/qt4' (Permission denied)
+error: unable to unlink old 'Library/Aliases/shell-fm' (Permission denied)
+error: unable to unlink old 'Library/Aliases/slang' (Permission denied)
+error: unable to unlink old 'Library/Aliases/sphinxbase' (Permission denied)
+error: unable to unlink old 'Library/Aliases/sqlite3' (Permission denied)
+error: unable to unlink old 'Library/Aliases/stax-sdk' (Permission denied)
+error: unable to unlink old 'Library/Aliases/style' (Permission denied)
+error: unable to unlink old 'Library/Aliases/svn' (Permission denied)
+error: unable to unlink old 'Library/Aliases/tinyfugue' (Permission denied)
+error: unable to unlink old 'Library/Aliases/twemproxy' (Permission denied)
+error: unable to unlink old 'Library/Aliases/twolame' (Permission denied)
+error: unable to unlink old 'Library/Aliases/unix2dos' (Permission denied)
+error: unable to unlink old 'Library/Aliases/urxvt' (Permission denied)
+error: unable to unlink old 'Library/Aliases/usb-multiplex-daemon' (Permission denied)
+error: unable to unlink old 'Library/Aliases/vid.stab' (Permission denied)
+error: unable to unlink old 'Library/Aliases/wxwidgets' (Permission denied)
+error: unable to unlink old 'Library/Aliases/xmlsec1' (Permission denied)
+error: unable to unlink old 'Library/Aliases/zmq' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_bash_completion.sh' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_fish_completion.fish' (Permission denied)
+error: unable to unlink old 'Library/Contributions/brew_zsh_completion.zsh' (Permission denied)
+error: unable to unlink old 'Library/Contributions/example-formula.rb' (Permission denied)
+error: unable to unlink old 'Library/ENV/3.2.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/ant' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/apr-1-config' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/bsdmake' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c89' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/c99' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/cc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/clang' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/clang++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/cpp' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.3' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.4' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.5' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.7' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.8' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/g++-4.9' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.3' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.4' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.5' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.6' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.7' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.8' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gcc-4.9' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/git' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/gmake' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/i686-apple-darwin11-llvm-g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/i686-apple-darwin11-llvm-gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/ld' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-g++' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-g++-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-gcc' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/llvm-gcc-4.2' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/make' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/mig' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/pod2man' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/sed' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/svn' (Permission denied)
+error: unable to unlink old 'Library/ENV/4.3/xcrun' (Permission denied)
+fatal: cannot create directory at 'Library/ENV/pkgconfig/10.10': Permission denied
+TangtangdeMacBook-Pro:local d_ttang$ sudo git reset --hard origin/master
+Password:
+HEAD is now at 58980ce owamp: add 3.3 bottle.
+TangtangdeMacBook-Pro:local d_ttang$ brew
+Example usage:
+  brew [info | home | options ] [FORMULA...]
+  brew install FORMULA...
+  brew uninstall FORMULA...
+  brew search [foo]
+  brew list [FORMULA...]
+  brew update
+  brew upgrade [FORMULA...]
+  brew pin/unpin [FORMULA...]
+
+Troubleshooting:
+  brew doctor
+  brew install -vd FORMULA
+  brew [--env | config]
+
+Brewing:
+  brew create [URL [--no-fetch]]
+  brew edit [FORMULA...]
+  open https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md
+
+Further help:
+  man brew
+  brew home
+TangtangdeMacBook-Pro:local d_ttang$ 

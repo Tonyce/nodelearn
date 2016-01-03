@@ -1,0 +1,55 @@
+<html>
+<head>
+	<style>
+		#submitBtn {
+			display: flex;
+			display: -webkit-flex;
+			-webkit-align-items: center;
+  				align-items: center;
+  			-webkit-justify-content: center;
+  				justify-content:center
+
+			font-size:15px;
+			border:1px solid red;
+			border-radius: 15px;
+			width: 100px;
+			height: 30px;  		
+		}
+		#submitBtn:hover {
+			color: #fff;
+			cursor:pointer;
+			background: #03A9F4;
+			border:1px solid #03A9F4;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="submitBtn">
+		submit
+	</div>
+	
+
+	<form>
+	  <input type="file" name="pic" id="pic"/>
+	  <input type="button" id="submitBtn">
+	</form>
+
+	<script>
+		submitTestBtn.onclick = function(){
+			// var testUrl = "http://test.iweekapi.com/api/me/";
+			// var body = getInfo();
+			// makePOSTRequest(testUrl, body);
+			var fullPath = document.getElementById("pic").value
+			console.log(fullPath)
+			var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+			var filename = fullPath.substring(startIndex);
+			if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+				filename = filename.substring(1);
+			}
+			alert(filename);
+			// console.log(file)
+		}
+	</script>
+</body>
+<html>
